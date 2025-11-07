@@ -1,3 +1,4 @@
+// Practice Problem: Create an object by seeing the profile details.
 const profile = {
     username: "shradhakhapra",
     isFollow: true,
