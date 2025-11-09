@@ -30,8 +30,12 @@ so does it doesn't contains () brackets like .trim and other string methods*/
 
 
 // #String Methods in JS:-
+
 // .trim() String Method
 let permit = "     No Entry      ";
-console.log(permit.trim());   // here we have some unwanted spaces in starting and end so, .trim() method will remove that
+console.log(permit.trim());   // it will remove extra spaces from starting and ending of string
 
+// .toUpperCase() String Method
+let movieName = "inception";
+console.log(movieName.toUpperCase());  // it will convert all letters to uppercase
 
