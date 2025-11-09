@@ -116,4 +116,5 @@ if (score >= 90 && score <= 100) {
 } else {
     console.log("Please enter a valid score!")
 }
+
 // End of File
