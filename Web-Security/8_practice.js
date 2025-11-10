@@ -39,3 +39,27 @@ console.log(permit.trim());   // it will remove extra spaces from starting and e
 let movieName = "inception";
 console.log(movieName.toUpperCase());  // it will convert all letters to uppercase
 
+// .toLowerCase() String Method
+let directorName = "CHRISTOPHER NOLAN";
+console.log(directorName.toLowerCase()); // it will convert all letters to lowercase
+
+// .slice() String Method
+let film = "The Dark Knight";
+console.log(film.slice(4, 8)); // it will extract letters from index 4 to index 7 (8-1)
+
+// .replace() String Method
+let actor = "Robert Downey Jr.";
+console.log(actor.replace("Downey", "Smith")); // it will replace "Downey" with "Smith"
+console.log(actor.replaceAll("o", "0")); // it will replace all "o" with "0"
+
+// .includes() String Method
+let franchise = "Marvel Cinematic Universe";
+console.log(franchise.includes("Cinematic")); // it will return true if "Cinematic" is found in the string
+
+// .indexOf() String Method
+let character = "Tony Stark is Iron Man";
+console.log(character.indexOf("Iron")); // it will return the starting index of "Iron" in the string
+
+// .charAt() String Method
+let quote = "To be or not to be";
+console.log(quote.charAt(6)); // it will return the character at index 6
