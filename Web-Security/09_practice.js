@@ -10,3 +10,4 @@ let fullName = firstName + lastName;
 
 let userName = "@" + fullName.replace(/\s/g, '').toLowerCase() + fullName.length;
 console.log(`Username: ${userName}`);
+
