@@ -1,7 +1,7 @@
 //Arrays; Collections of items :
 
 let bounties = ["500, 1000, 1,500, 2,000"];
-    
+
 //Accessing Array Items :
 let firstBounty = bounties[0]; // "500"
 let secondBounty = bounties[1]; // "1000"
@@ -19,12 +19,12 @@ bounties.push("2,500"); // Adds "2,500" to the end of the array
 let lastBounty = bounties.pop(); // Removes and returns the last item ("2,500")
 
 //Looping Through an Array :
-for (let index = 0; index < bounties.length; index++) {
-    console.log(bounties[index]);
+for (let i = 0; i < bounties.length; i++) {
+    console.log(bounties[i]);
 }
 
 //Using forEach method :
-bounties.forEach(function(bounty) {
+bounties.forEach(function (bounty) {
     console.log(bounty);
 });
 
@@ -43,7 +43,7 @@ bountyMatrix.push(["2500", "3000"]);
 
 //Removing the last row from the multidimensional array :
 let lastRow = bountyMatrix.pop(); // Removes and returns the last row (["2500", "3000"])
-
+[85, 97, 44, 37, 76, 60]
 //Looping through a multidimensional array :
 for (let i = 0; i < bountyMatrix.length; i++) {
     for (let j = 0; j < bountyMatrix[i].length; j++) {
@@ -52,10 +52,27 @@ for (let i = 0; i < bountyMatrix.length; i++) {
 }
 
 //Using forEach method for multidimensional array :
-bountyMatrix.forEach(function(row) {
-    row.forEach(function(bounty) {
+bountyMatrix.forEach(function (row) {
+    row.forEach(function (bounty) {
         console.log(bounty);
     });
-});         
+});
 
 //End of Arrays Practice Code
+
+
+
+
+
+/* For a given array with marks fo students -> [85, 97, 44, 37, 76, 60] 
+Find the average marks of the entire class. */
+
+let marks = [85, 97, 44, 37, 76, 60];
+sum = 0;
+for (val of marks) {
+    sum += val;
+}
+console.log(sum);
+
+avg = sum / marks.length;
+console.log(`Avg marks of class = ${avg}`);
