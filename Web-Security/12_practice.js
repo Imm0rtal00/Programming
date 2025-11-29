@@ -1,4 +1,3 @@
-// Direct object model
 const user = {
     name: "Alice",
     role: "admin"
@@ -77,5 +76,8 @@ console.log(sum(60, 9));
 const arrowsum = (a, b) => {
     return a + b;
 };
-console.log(arrowsum(3,5));
+console.log(arrowsum(60, 9));
 
+// arrow function with implicit return
+const implicitSum = (a, b) => a + b;
+console.log(implicitSum(60, 9));
