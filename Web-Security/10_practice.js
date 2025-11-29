@@ -1,4 +1,4 @@
-//Arrays; Collections of items :
+//Arrays & it's Methods
 
 let bounties = ["500, 1000, 1,500, 2,000"];
 
@@ -9,6 +9,9 @@ let secondBounty = bounties[1]; // "1000"
 //Modifying Array Items :
 bounties[2] = "1,200"; // Changes the third item to "1,200"
 
+
+//#Array Methods :
+
 //Array Properties and Methods :
 let numberOfBounties = bounties.length; // 4
 
@@ -17,6 +20,18 @@ bounties.push("2,500"); // Adds "2,500" to the end of the array
 
 //Removing Items from an Array :
 let lastBounty = bounties.pop(); // Removes and returns the last item ("2,500")
+
+// shift Method :
+let firstRemovedBounty = bounties.shift(); // Removes and returns the first item ("500")
+
+// unshift Method :
+bounties.unshift("400"); // Adds "400" to the beginning of the array
+
+// Slice Method :
+let someBounties = bounties.slice(1, 3); // Creates a new array with items from index 1 to 2 (["1000", "1,200"])
+
+// Splice Method :
+bounties.splice(1, 1, "1,100"); // Removes 1 item at index 1 and adds "1,100" there
 
 //Looping Through an Array :
 for (let i = 0; i < bounties.length; i++) {
@@ -76,3 +91,13 @@ console.log(sum);
 
 avg = sum / marks.length;
 console.log(`Avg marks of class = ${avg}`);
+
+// End of Practice Code
+
+
+let companies = ["Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"];
+
+companies.splice(0, 1);
+companies.splice(1, 1, "Ola");
+companies.push("Amazon");
+console.log(companies);
